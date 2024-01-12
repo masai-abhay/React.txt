@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <script src="https://www.unpkg.com/react@18.2.0/umd/react.development.js"></script>
+    <script src="https://www.unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+</head>
+<body>
+
+    <div id="root"></div>
+    
+    
+</body>
+<script>
+
+
+let mainDiv = React.createElement("div",
+{
+    style: {
+      backgroundColor:"pink", 
+      
+    border:"1px solid red",
+    display : "flex",
+    
+    justifyContent: "center", // Corrected property name
+            alignItems: "center", // Center vertically
+            height: "90px",   
+
+}
+  
+}, 
+     
+[
+    React.createElement("div",{style: {border:"1px solid red",backgroundColor:"red", padding : "20px", margin: "8px"}},"1"),
+    React.createElement("div",{style: {border:"1px solid yellow",backgroundColor:"yellow", padding : "20px", margin: "8px"}},"2"),
+    React.createElement("div",{style: {border:"1px solid green", backgroundColor:"green",padding : "20px", margin: "8px"}},"3"),
+    React.createElement("div",{style: {border:"1px solid purple",backgroundColor:"purple", padding : "20px", margin: "8px"}},"4"),
+]
+)
+
+let root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(mainDiv)
+</script>
+</html>
