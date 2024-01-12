@@ -37,3 +37,22 @@
     - React.createElement is a function provided by React that is used to create React elements. In React, everything in the user interface is a component, and components are made up of elements. Elements are lightweight representations of the UI, and they describe what should appear on the screen.
     What are the three properties that createElement accept?
     What is the meaning of render and root?
+
+    What are the three properties that createElement accept?
+ 1-   React.createElement('div', /* ... */);
+ 2-    React.createElement('h1', { className: 'greeting' }, /* ... */);
+ 3-   React.createElement('div', null, 'Hello, World!');
+
+
+
+
+What is the meaning of render and root?
+
+- Render
+ In React, "render" refers to the process of converting React components into actual DOM elements that can be displayed on the screen. The ReactDOM.render() function is a key part of this process. It takes a React element or component and attaches it to a specific DOM element in the HTML document.
+
+
+- Root:
+
+    The "root" usually refers to the root DOM element where your React application is mounted. It's the top-level element in your HTML file where you want to render your React components. The ReactDOM.render() function is typically called with the root element to attach the React component tree to it.
+
