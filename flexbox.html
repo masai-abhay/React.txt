@@ -30,13 +30,14 @@ let mainDiv = React.createElement("div",
 
 }
   
-}, 
+},/*"abhay",   <- is center with other children*/
      
 [
     React.createElement("div",{style: {border:"1px solid red",backgroundColor:"red", padding : "20px", margin: "8px"}},"1"),
     React.createElement("div",{style: {border:"1px solid yellow",backgroundColor:"yellow", padding : "20px", margin: "8px"}},"2"),
     React.createElement("div",{style: {border:"1px solid green", backgroundColor:"green",padding : "20px", margin: "8px"}},"3"),
     React.createElement("div",{style: {border:"1px solid purple",backgroundColor:"purple", padding : "20px", margin: "8px"}},"4"),
+    React.createElement("div", { style: { position: "absolute", top: "8px", left: "8px", color: "black", fontSize: "18px" } }, "abhay"),
 ]
 )
 
