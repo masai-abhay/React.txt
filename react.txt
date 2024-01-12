@@ -1,0 +1,39 @@
+
+    What is React?
+    - React is an open-source JavaScript library used for building user interfaces or UI components, particularly for single-page applications where user interactions are frequent and dynamic. It was developed and is maintained by Facebook.
+
+    Who made React?
+    - Jordan Walke made a react, He is a software engineer at Facebook.
+
+
+    What is Babel?
+   - Babel is a JavaScript compiler that allows developers to write code using the latest ECMAScript standards  and then transpile that code into an older version of JavaScript that can be executed in environments that may not support the latest features.
+      (including features from ECMAScript 2015 and later)
+
+
+    How does Babel convert html code in React into valid code?
+    - Babel itself primarily deals with JavaScript, and it doesn't directly handle HTML code conversion in React. When working with React, the HTML-like code you often see is actually JSX (JavaScript XML). JSX is a syntax extension for JavaScript that looks similar to XML or HTML and is commonly used with React to describe the structure of UI components.
+
+    What is ReactDOM used for? Write an example?
+    - ReactDOM is a package in React that provides methods for interacting with the DOM (Document Object Model). It's specifically designed to work with React components and to facilitate the rendering of React applications in the browser. The most common use of ReactDOM is to render React components into the actual DOM.
+
+
+    What are the packages that you need to import for react to work with?
+-  import React from 'react';
+   import ReactDOM from 'react-dom';
+   const element = <h1>Hello, JSX!</h1>;
+   import MyComponent from './MyComponent';
+   import styled from 'styled-components';
+
+    How do you add react to a web application?
+
+  in gitbash-   npx create-react-app my-react-app
+                cd my-react-app
+                npm start
+                npm run build
+
+    What is React.createElement?
+
+    - React.createElement is a function provided by React that is used to create React elements. In React, everything in the user interface is a component, and components are made up of elements. Elements are lightweight representations of the UI, and they describe what should appear on the screen.
+    What are the three properties that createElement accept?
+    What is the meaning of render and root?
